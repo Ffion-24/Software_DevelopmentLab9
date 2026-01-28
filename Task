@@ -1,0 +1,7 @@
+#Clue 1
+
+def greetUser():
+    welcome= "Welcome to the Python Treasure Hunt"
+    return welcome
+
+print(greetUser())
