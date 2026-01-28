@@ -1,7 +1,7 @@
 #Clue 1
 
 def greetUser():
-    welcome= "Welcome to the Python Treasure Hunt"
+    welcome= "Welcome to the Python Treasure Hunt" # telling the code that any time greetUser is mentioned the vairible welcome is actioned
     return welcome
 
 print(greetUser())
@@ -9,19 +9,19 @@ print(greetUser())
 #Clue 2
 
 def calculateSum():
-    sum = 25+15
+    sum = 25+15  # This calculates the sum
     return sum
 
 print(calculateSum())
 
 #Clue 3
 
-def createUserProfile(userName , userAge = 25, userCountry = "Unknown"):
+def createUserProfile(userName , userAge = 25, userCountry = "Unknown"): #the function includes the username and the users age.
     return{
         "Name": userName,
         "Age" : userAge,
         "Country" : userCountry
-    }
+    }  # if nothing is given for userAge and userCountry then the code will insert 25 and Unknown respectivly
     
 profile1 = createUserProfile("Ali")
 print(profile1)
@@ -30,17 +30,17 @@ print(profile1)
 def calculateTotalSum(*args): 
     return sum(args)
 
-total = calculateTotalSum(12, 4, 23)
+total = calculateTotalSum(12, 4, 23)  
 
-print(total)
+print(total) #*args works becasuse the * represents an known set of arguments
 
 #Clue 5
-square = lambda x:x*x
+square = lambda x:x*x  # this is just another way of doing function
 result = square(4)
 print(result)
 
 #Clue 6
-def calculateFactorial(n):
+def calculateFactorial(n):  #recursive function calls its self
     if n == 0 or n == 1:
         return 1
     return n*calculateFactorial(n-1)
@@ -49,7 +49,7 @@ result = calculateFactorial(5)
 print(result)
 
 #Clue 7
-def numberSequenceGenerator(limit):
+def numberSequenceGenerator(limit):  #writing a function to return the number 0 to 4 
     for i in range(limit):
         yield i
 
