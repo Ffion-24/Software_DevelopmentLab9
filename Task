@@ -27,3 +27,9 @@ profile1 = createUserProfile("Ali")
 print(profile1)
 
 #Clue 4
+def calculateTotalSum(*args): 
+    return sum(args)
+
+total = calculateTotalSum(12, 4, 23)
+
+print(total)
