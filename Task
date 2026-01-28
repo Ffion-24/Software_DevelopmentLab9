@@ -33,3 +33,8 @@ def calculateTotalSum(*args):
 total = calculateTotalSum(12, 4, 23)
 
 print(total)
+
+#Clue 5
+square = lambda x:x*x
+result = square(4)
+print(result)
