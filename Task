@@ -5,3 +5,11 @@ def greetUser():
     return welcome
 
 print(greetUser())
+
+#Clue 2
+
+def calculateSum():
+    sum = 25+15
+    return sum
+
+print(calculateSum())
