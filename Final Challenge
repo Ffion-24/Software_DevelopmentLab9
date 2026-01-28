@@ -1,0 +1,29 @@
+def greetUser():
+    welcome= "Welcome to the Python Treasure Hunt" # telling the code that any time greetUser is mentioned the vairible welcome is actioned
+    return welcome
+
+def createUserProfile(userName , userAge = 25, userCountry = "Unknown"): #the function includes the username and the users age.
+    return{
+        "Name": userName,
+        "Age" : userAge,
+        "Country" : userCountry
+    }
+profile2 = createUserProfile("James")
+
+
+def calculateFactorial(n):  #recursive function calls its self
+    if n == 0 or n == 1:
+        return 1
+    return n*calculateFactorial(n-1)
+
+result2 = calculateFactorial(25)
+
+def calculateTotalSum(*args): 
+    return sum(args)
+
+total2 = calculateTotalSum(1,6,25,34)
+
+print(greetUser())
+print(profile2)
+print("The factorial of your age is:" , result2)
+print("The toal sum of 1,6,25 and 34 are:" , total2)
