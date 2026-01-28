@@ -38,3 +38,12 @@ print(total)
 square = lambda x:x*x
 result = square(4)
 print(result)
+
+#Clue 6
+def calculateFactorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n*calculateFactorial(n-1)
+
+result = calculateFactorial(5)
+print(result)
