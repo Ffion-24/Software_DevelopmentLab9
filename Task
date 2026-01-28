@@ -13,3 +13,17 @@ def calculateSum():
     return sum
 
 print(calculateSum())
+
+#Clue 3
+
+def createUserProfile(userName , userAge = 25, userCountry = "Unknown"):
+    return{
+        "Name": userName,
+        "Age" : userAge,
+        "Country" : userCountry
+    }
+    
+profile1 = createUserProfile("Ali")
+print(profile1)
+
+#Clue 4
