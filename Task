@@ -47,3 +47,11 @@ def calculateFactorial(n):
 
 result = calculateFactorial(5)
 print(result)
+
+#Clue 7
+def numberSequenceGenerator(limit):
+    for i in range(limit):
+        yield i
+
+for num in numberSequenceGenerator(5):
+    print(num)
